@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="562.0" style="-fx-background-color: black;">
+         <children>
+            <TableView fx:id="customerTlv" layoutX="27.0" layoutY="30.0" prefHeight="234.0" prefWidth="225.0">
+              <columns>          
+                  <TableColumn fx:id="customerIDcln" prefWidth="80.79999542236328" text="Customer ID">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="customerID" />
+                      </cellValueFactory>
+                  </TableColumn> 
+                  <TableColumn fx:id="nameCln" prefWidth="69.2000732421875" text="Name">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="customerName" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="addressIDcln" prefWidth="75.0" text="Address ID"> 
+                      <cellValueFactory>
+                          <PropertyValueFactory property="addressID" />
+                      </cellValueFactory>
+                  </TableColumn>
+              </columns>
+            </TableView>
+            <Button fx:id="backBtn" layoutX="27.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: black; -fx-border-radius: 10px; -fx-border-color: white;" text="&lt;----" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="editBtn" layoutX="86.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#selectedCustomerBtn" prefHeight="27.0" prefWidth="166.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Select customer to update" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteBtn" layoutX="27.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#delete" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Delete" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <HBox layoutX="292.0" layoutY="20.0" prefHeight="220.0" prefWidth="208.0">
+               <children>
+                  <VBox prefHeight="226.0" prefWidth="82.0" spacing="4.0">
+                     <children>
+                        <Label fx:id="phoneLbl" prefHeight="27.0" prefWidth="68.0" text="Phone" textFill="#8feb8f" />
+                        <Label fx:id="nameLbl" prefHeight="27.0" prefWidth="68.0" text="Name" textFill="#8feb8f" />
+                        <Label fx:id="addressLbl" prefHeight="27.0" prefWidth="68.0" text="Address" textFill="#8feb8f" />
+                        <Label fx:id="address2Lbl" prefHeight="27.0" prefWidth="68.0" text="Address 2" textFill="#8feb8f" />
+                        <Label fx:id="cityLbl" prefHeight="27.0" prefWidth="68.0" text="City" textFill="#8feb8f" />
+                        <Label fx:id="countryLbl" prefHeight="27.0" prefWidth="68.0" text="Country" textFill="#8feb8f" />
+                        <Label fx:id="zipLbl" prefHeight="27.0" prefWidth="68.0" text="Zip" textFill="#8feb8f" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="299.0" prefWidth="118.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="phoneTxt" promptText="Enter Zip" />
+                        <TextField fx:id="nameTxt" promptText="Enter Name" />
+                        <TextField fx:id="addressTxt" promptText="Enter Addess" />
+                        <TextField fx:id="Address2Txt" promptText="enter Address 2" />
+                        <TextField fx:id="cityTxt" promptText="Enter City" />
+                        <TextField fx:id="countryTxt" promptText="Enter Country" />
+                        <TextField fx:id="zipTxt" promptText="Enter Zip" />
+                     </children>
+                     <padding>
+                        <Insets top="4.5" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button fx:id="updateBtn" layoutX="458.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#update" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Update" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="createBtn" layoutX="359.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#createNew" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Create new" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="clearBtn" layoutX="407.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Clear" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

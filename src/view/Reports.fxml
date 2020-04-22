@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="322.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="322.0" prefWidth="742.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="reportTitleLbl" alignment="CENTER" layoutX="23.0" layoutY="49.0" prefHeight="27.0" prefWidth="276.0" text="Click to generate report" textAlignment="CENTER" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="NumAptReportBtn" layoutX="22.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#NumberOfAppointmentsByMonth" prefHeight="31.0" prefWidth="276.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="Number of appointment types by month" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="scheduleReportBtn" layoutX="22.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#scheduleReport" prefHeight="31.0" prefWidth="276.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="Schedule for each consultant" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="logReportBtn" layoutX="22.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#logReport" prefHeight="31.0" prefWidth="276.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="Consultant login report" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="backBtn" layoutX="14.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="31.0" prefWidth="57.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="&lt;------" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="countries" layoutX="22.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#allCountries" prefHeight="31.0" prefWidth="276.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="List of all customers countries" textFill="#8feb8f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="reportArea" editable="false" layoutX="318.0" layoutY="26.0" prefHeight="271.0" prefWidth="403.0" style="-fx-background-color: beige; -fx-font-color: #b01414;" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

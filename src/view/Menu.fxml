@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="393.0" prefWidth="530.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="228.0" layoutY="51.0" prefHeight="27.0" prefWidth="76.0" text="Menu" textAlignment="CENTER" textFill="#8feb8f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="aptCalendarBtn" layoutX="160.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#aptCalendar" prefHeight="31.0" prefWidth="212.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="Appointment Calendar" textFill="#8feb8f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="customerRecBtn" layoutX="160.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#customerRec" prefHeight="31.0" prefWidth="212.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="Customer Records" textFill="#8feb8f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="userLogBtn" layoutX="160.0" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#report" prefHeight="31.0" prefWidth="212.0" style="-fx-border-radius: 10px; -fx-border-color: white; -fx-background-color: black;" text="Reports" textFill="#8feb8f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
